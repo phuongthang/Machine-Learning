@@ -31,8 +31,8 @@ def create_campaign():
     end_time = datetime.strptime(data["endTime"], '%Y-%m-%d').date()
     keyword = data["keyword"]
     links = data["links"]
-    email = "phuongthangcnpm4@gmail.com"
-    password = "tit250720xx"
+    email = ""
+    password = ""
 
     if email is None or not email or password is None or not password:
         return Response('Email or password not provided ! Campaign not be created yet !', status=500)
